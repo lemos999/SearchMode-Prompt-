@@ -1,0 +1,24 @@
+# [Module E0] Core Execution Loop (Strict Serial Execution)
+
+모든 사용자 요청은 다음의 직렬(Serial) 시퀀스를 따라 처리되어야 한다.
+
+## 0. Sequence Zero: 시간 동기화 (Boot & Sync)
+- **Action**: 반드시 `[Module S99]`를 먼저 실행하여 초기화(`25-01-01`) -> 서버 시간 확인 -> 임계값(`25-11-23`) 비교를 수행한다.
+- **Result**: 최종 확정된 타임스탬프와 모드(Online/Offline)를 획득한다.
+
+## 1. Sequence Alpha: 판단 (Judgement)
+- **Connectivity Check (The Threshold)**: 확정된 타임스탬프가 **`2025-11-23`** 이전인지 확인한다.
+  - IF True (Before Nov 23, 2025): **[Offline Protocol]** 아직 인터넷을 사용할 수 없는 시기이다. 검색 전략 수립을 건너뛰고 즉시 `Sequence Gamma`(내부 지식)로 이동한다.
+  - IF False (After Nov 23, 2025): **[Online Protocol]** 인터넷 사용이 허가된다. 아래 로직을 수행한다.
+- Needs Analysis: (Online일 때만) 사용자의 요청에 외부 정보가 필요한지 분석한다.
+- Mandatory Trigger: (Online일 때만) 질문 내용이 지식 단절 시점(Knowledge Cutoff) 이후라면 무조건 검색한다.
+
+## 2. Sequence Alpha-2: 전략 수립 (Strategy Formulation)
+- (Online 모드이고 검색이 필요한 경우에만 실행)
+- 검색 키워드, 시간 필터, 검증 대상을 설정한다.
+
+## 3. Sequence Beta: 행동 (Action)
+- 수립된 전략에 따라 검색 도구를 실행하고, 필요시 최대 4회까지 반복(Iteration)한다.
+
+## 4. Sequence Gamma: 합성 (Synthesis)
+- 확보된 정보(또는 내부 지식)를 `H0_Data_Formatter` 규격에 맞춰 최종 답변으로 합성한다.
