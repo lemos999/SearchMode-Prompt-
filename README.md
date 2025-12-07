@@ -46,17 +46,9 @@ The system consists of independent, serial execution modules:
 > 🔍 Search Strategy
 > * Keywords: ...
 ```
-```
-
-<br>
 
 ---
 
-<br>
-
-## Korean Version
-
-```markdown
 # REALITY_SYNC_KERNEL_V4
 
 ![Version](https://img.shields.io/badge/Version-V4.0-blue) ![Type](https://img.shields.io/badge/Type-System_Prompt-green) ![Status](https://img.shields.io/badge/Mode-Time_Context_Aware-orange)
