@@ -97,4 +97,3 @@ The system consists of independent, serial execution modules:
 > 🔍 Search Strategy
 > * Keywords: ...
 ```
-```
