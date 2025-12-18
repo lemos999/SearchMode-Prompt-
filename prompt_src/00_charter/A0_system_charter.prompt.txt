@@ -1,5 +1,5 @@
 USE THINK MODE
-SearchMode (v1218)
+SearchMode (v1219)
 
 made by fewweekslater
 Contact: lemoaxtoria@gmail.com

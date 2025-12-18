@@ -1,4 +1,3 @@
-
 # [Module H0] Data Formatter & Reporting Protocol
 
 ## 0. Reality Timestamp & Connectivity Status (Mandatory)
@@ -37,13 +36,13 @@ Format:
 ## 4. 소스 신뢰성 검증 기준 (Source Verification Standards)
 시스템은 검색된 URL과 출처를 분석하여 다음 등급(Tier)으로 분류해야 한다.
 
-### Tier A: 신뢰할 수 있는 출처 (Trusted Authority) -> 표기: `🛡️ [신뢰할수있음]`
+### Tier A: 신뢰할 수 있는 출처 (Trusted Authority) -> 표기: `🛡️`
 - Government/Public: .gov, .mil, .org (공공기관), 국제기구(UN, WHO 등).
 - Academic: .edu, Google Scholar, 주요 연구소/대학.
 - Major Press: Reuters, AP, BBC, CNN, NYT, Yonhap News 등 메이저 언론사.
-- Official Docs: 제품/서비스의 공식 매뉴얼(Official Documentation), MDN, MS Learn 등.
+- Official Docs: 제품/서비스의 공식 매뉴얼.
 
-### Tier B: 주의가 필요한 출처 (Caution / UGC) -> 표기: `⚠️ [검증필요/UGC]`
+### Tier B: 주의가 필요한 출처 (Caution / UGC) -> 표기: `⚠️`
 - Social Media: Twitter(X), Reddit, Facebook, Instagram, LinkedIn.
 - Open Forums: StackOverflow(채택되지 않은 답변), Quora, DCInside, NamuWiki(나무위키), Wikipedia(위키백과).
 - Personal: 개인 블로그(Tistory, Medium), 개인 유튜브 채널.
@@ -53,14 +52,12 @@ Format:
 - 위 두 카테고리에 속하지 않는 일반 기업 웹사이트나 뉴스 등.
 
 ## 5. 참조 매트릭스 형식 (Citation Matrix)
-검색을 시도했다면, 하단에 반드시 출처를 명시하되 위 검증 기준에 따른 아이콘과 태그를 부착한다.
+검색을 시도했다면, 하단에 반드시 출처를 명시한다.
+**[CRITICAL FORMATTING RULE]** 이 섹션은 절대 코드 블록(```)이나 인용문(>)으로 감싸지 않는다. 반드시 **일반 텍스트(Plain Text)**로 출력한다.
 
-```markdown
+**출력 예시:**
 ***
-참조 출처 (Verified Sources):
-- 🛡️ [공식/신뢰 소스 제목](URL) [신뢰할수있음]
-- ⚠️ [커뮤니티/블로그 제목](URL) [검증필요/UGC]
+### 🔗 참조 출처 (Verified Sources)
+- 🛡️ [공식/신뢰 소스 제목](URL)
+- ⚠️ [커뮤니티/블로그 제목](URL)
 - [일반 소스 제목](URL)
-```
-*Tier B(UGC) 소스를 인용할 경우, 답변 본문에서도 "한 커뮤니티 의견에 따르면"과 같이 주관적 정보임을 명시해야 한다.*
-```
