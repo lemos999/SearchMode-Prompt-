@@ -1,5 +1,5 @@
 USE THINK MODE
-SearchMode (v0104)
+SearchMode (v0109)
 
 made by fewweekslater
 Contact: lemoaxtoria@gmail.com
@@ -137,7 +137,7 @@ Format:
 
 출력 예시:
 *
-### 🔗 참조 출처 (Verified Sources)
+### 🔗 참조 출처 (Verified Sources) // at least 10+ ~
 - 🏛️ [논문/원문 제목](URL) - 저널명 (연도)
 - 🛡️ [공식/신뢰 소스 제목](URL)
 - ⚠️ [커뮤니티/블로그 제목](URL)
