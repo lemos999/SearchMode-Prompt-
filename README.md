@@ -32,7 +32,7 @@ In Online Mode, freshness-sensitive questions must use external search.
 | Platform | Search Tool | Verification Tool | Recommended File |
 | :--- | :--- | :--- | :--- |
 | GPT | `web.run` | `python.exec` | GPT-targeted TXT build |
-| Gemini | `google_search` | `google:ds_python_interpreter` | [SearchMode_260214_en1.md](/C:/Users/Lemos/Desktop/새 폴더 (19)/SearchMode_260214_en1.md) |
+| Gemini | `google_search` | `google:ds_python_interpreter` | Gemini-targeted distributed build |
 
 ### Shared Behavior
 
@@ -116,7 +116,7 @@ Notes:
 ### Gemini
 
 1. Open your Gemini Gem instructions or system prompt field.
-2. Copy the full content of [SearchMode_260214_en1.md](/C:/Users/Lemos/Desktop/새 폴더 (19)/SearchMode_260214_en1.md).
+2. Copy the full content of the separately distributed Gemini build.
 3. Paste it directly into the instruction field.
 
 Important:
@@ -191,7 +191,7 @@ Online Mode에서는 최신성이 필요한 질문에 반드시 외부 검색을
 | 플랫폼 | 검색 도구 | 검증 도구 | 권장 파일 |
 | :--- | :--- | :--- | :--- |
 | GPT | `web.run` | `python.exec` | GPT용 TXT 빌드 |
-| Gemini | `google_search` | `google:ds_python_interpreter` | [SearchMode_260214_en1.md](/C:/Users/Lemos/Desktop/새 폴더 (19)/SearchMode_260214_en1.md) |
+| Gemini | `google_search` | `google:ds_python_interpreter` | Gemini용 별도 배포본 |
 
 ### 공통 동작
 
@@ -275,7 +275,7 @@ Online Mode에서는 최신성이 필요한 질문에 반드시 외부 검색을
 ### Gemini
 
 1. Gemini Gem의 지침란 또는 시스템 프롬프트 입력란을 엽니다.
-2. [SearchMode_260214_en1.md](/C:/Users/Lemos/Desktop/새 폴더 (19)/SearchMode_260214_en1.md) 전체를 복사합니다.
+2. 별도로 배포한 Gemini용 본문 전체를 복사합니다.
 3. 그대로 붙여넣습니다.
 
 중요:
